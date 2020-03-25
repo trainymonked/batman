@@ -1,3 +1,7 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #0A090A;
   color: #FFFFFF;
@@ -5,6 +9,7 @@ body {
   background-image: url('../img/main-bg.png');
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 100%;
 }
 
 .container {
@@ -34,9 +39,11 @@ body {
 .search {
   display: flex;
   align-items: center;
+  /* разобраться с flex */
   flex: 0.8;
 }
 .search-input {
+  /* разобраться с flex */
   flex: 1;
   background: rgba(196, 196, 196, 0.5);
   border-radius: 5px;
@@ -80,6 +87,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  /* разобраться */
   object-fit: cover;
 }
 
@@ -104,6 +112,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .movie-info {
@@ -112,6 +121,7 @@ body {
 }
 
 .tag {
+  /* ??? */
   display: inline-block;
   font-size: 16px;
   line-height: 19px;
@@ -168,6 +178,67 @@ body {
 }
 
 .content {
+  display: flex;
+  justify-content: space-between;
   background-color: #FFFFFF;
-  margin-top: 34px;
+  border-radius: 3px;
+  color: #000000;
+  padding: 43px 50px;
+}
+
+.poster {
+  display: block;
+  margin-top: -75px;
+  margin-bottom: 19px;
+}
+
+.button {
+  background-color: #FF8F27;
+  padding: 10px 44px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.actors-title {
+  padding-left: 15px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.actors-list {
+  list-style: none;
+  padding-left: 15px;
+  text-decoration: underline;
+}
+
+.full-info {
+  /* для чего flex тут? */
+  /* flex: 0.97; */
+  margin-left: 45px;
+}
+
+.full-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs-content {
+  margin-right: 70px;
+}
+
+.tabs-item {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.tabs-item-active {
+  color: #FF8F27;
 }
