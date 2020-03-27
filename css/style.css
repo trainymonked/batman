@@ -213,13 +213,13 @@ body {
   background-color: #FFFFFF;
   border-radius: 3px;
   color: #000000;
-  padding: 43px 50px;
+  padding: 3% 4%;
 }
 
 .poster {
   display: block;
-  margin-top: -75px;
-  margin-bottom: 19px;
+  margin-top: -40%;
+  margin-bottom: 20px;
 }
 
 .button-willwatch {
@@ -243,8 +243,10 @@ body {
 }
 
 .actors-list {
+  margin: 0;
   list-style: none;
   padding-left: 15px;
+  line-height: 150%;
 }
 
 .actors-list-item-link {
@@ -254,13 +256,13 @@ body {
 .full-info {
   /* для чего flex тут? */
   /* flex: 0.97; */
-  margin-left: 45px;
+  margin-left: 4%;
 }
 
 .tabs {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
+  /* justify-content: space-between; */
+  margin-bottom: 4%;
 }
 
 .tabs-item{
@@ -268,6 +270,10 @@ body {
   text-decoration: none;
   font-size: 18px;
   line-height: 21px;
+}
+
+.tabs-item:not(:last-child) {
+  margin-right: 4%;
 }
 
 .tabs-item-active {
@@ -285,6 +291,8 @@ body {
 
 .text {
   margin-top: 0;
+  font-size: 16px;
+  line-height: 140%;
 }
 
 .text-title {
@@ -327,3 +335,98 @@ body {
 }
 
 /* END CONTENT */
+
+
+/* MEDIA */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .tabs-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    background-size: 150%;
+  }
+  .container {
+    max-width: 740px;
+  }
+  .tabs {
+    flex-wrap: wrap;
+  }
+  .tabs-item {
+    flex-basis: 20%;
+    line-height: 2;
+  }
+  .full-content {
+    flex-wrap: wrap;
+  }
+  .tabs-content {
+    margin-bottom: 5%;
+  }
+} 
+
+@media (max-width: 768px) {
+  body {
+    background-size: 175%;
+  }
+  .container {
+    width: 540px;
+  }
+  .more {
+    display: none;
+  }
+  .tabs-item {
+    flex-basis: 33%;
+  }
+  .tabs-content {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 578px) {
+  body {
+    background-size: 250%;
+  }
+  .container {
+    width: 90%;
+  }
+  .header {
+    flex-wrap: wrap;
+    margin-bottom: 50%;
+  }
+  .search {
+    flex-basis: 100%;
+    order: 3;
+    margin-top: 4%;
+  }
+  .content {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .actors-list, .actors-title {
+    display: none;
+  }
+  .tabs {
+    margin-top: 4%;
+  }
+  .movie-info {
+    flex-wrap: wrap;
+  }
+  .play {
+    flex-basis: 100%;
+    margin-top: 10%;
+  }
+  .poster {
+    display: inline-block;
+    width: 100%;
+    margin-top: -20%;
+  }
+  .button-willwatch {
+    width: 100%;
+  }
+}
