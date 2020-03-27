@@ -11,16 +11,21 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="logo">КиноПульс</div>
+      <div class="logo">
+        <a href="#" class="logo-link">КиноПульс</a>
+      </div>
       <form action="" class="search">
-        <input type="search" class="search-input" placeholder="Фильмы, сериалы, актеры">
+        <input type="input" class="search-input" placeholder="Фильмы, сериалы, актеры">
         <button type="submit" class="search-button">
           <img src="./img/search-icon.svg" alt="search-icon">
         </button>
       </form>
       <div class="user">
-        <img src="./img/bookmark.svg" alt="bookmark-icon" class="bookmark">
-        <img src="./img/avatar.jpg" alt="avatar" class="avatar">
+        <button class="bookmark-button">
+          <!-- TODO: change to font awesome <i class="far fa-bookmark"></i> -->
+          <img src="./img/bookmark.svg" alt="bookmark-icon">
+        </button>
+        <button class="avatar"></button>
       </div>
     </header>
 
@@ -33,25 +38,26 @@
           <span class="country">США, 2021</span>
           <a href="#" class="play">Смотреть трейлер</a>
         </div>
-        <a href="#" class="more">Подробнее</a>
+        <a href="#content-link" class="more">Подробнее</a>
       </div>
 
       <div class="content">
+        <div id="content-link"></div>
         <div class="short-info">
           <img src="./img/poster.jpg" alt="poster" class="poster">
-          <button class="button">Буду смотреть</button>
+          <button class="button-willwatch">Буду смотреть</button>
           <h1 class="actors-title">В главных ролях:</h1>
           <ul class="actors-list">
-            <li class="actors-list-item">Роберт Паттинсон</li>
-            <li class="actors-list-item">Зои Кравиц</li>
-            <li class="actors-list-item">Колин Фаррелл</li>
-            <li class="actors-list-item">Питер Сарсгаард</li>
-            <li class="actors-list-item">Пол Дано</li>
-            <li class="actors-list-item">Энди Серкис</li>
-            <li class="actors-list-item">Джеффри Райт</li>
-            <li class="actors-list-item">Джон Туртурро</li>
-            <li class="actors-list-item">Макс Карвер</li>
-            <li class="actors-list-item">Кон О’Нилл</li>
+            <li class="actors-list-item"><a href="#" class="actors-list-item-link">Роберт Паттинсон</a></li>
+            <li class="actors-list-item"><a href="#" class="actors-list-item-link">Зои Кравиц</a></li>
+            <li class="actors-list-item"><a href="#" class="actors-list-item-link">Колин Фаррелл</a></li>
+            <li class="actors-list-item"><a href="#" class="actors-list-item-link">Питер Сарсгаард</a></li>
+            <li class="actors-list-item"><a href="#" class="actors-list-item-link">Пол Дано</a></li>
+            <li class="actors-list-item"><a href="#" class="actors-list-item-link">Энди Серкис</a></li>
+            <li class="actors-list-item"><a href="#" class="actors-list-item-link">Джеффри Райт</a></li>
+            <li class="actors-list-item"><a href="#" class="actors-list-item-link">Джон Туртурро</a></li>
+            <li class="actors-list-item"><a href="#" class="actors-list-item-link">Макс Карвер</a></li>
+            <li class="actors-list-item"><a href="#" class="actors-list-item-link">Кон О’Нилл</a></li>
           </ul>
         </div>
         <div class="full-info">
@@ -64,7 +70,8 @@
             <a href="#" class="tabs-item">Факты</a>
             <a href="#" class="tabs-item">Сайты</a>
             <a href="#" class="tabs-item">
-              <img src="./img/bookmark.svg" alt="bookmark-added" class="bookmark-added">
+              <!-- TODO: change to font awesome and paint bookmark icon <i class="fas fa-bookmark"></i> -->
+              <img src="./img/bookmark-orange.svg" alt="bookmark-added">
             </a>
           </nav>
           <div class="full-content">
@@ -77,7 +84,15 @@
               <p class="text">На Comic-Con в Сан-Диего в июле 2016 года было официально подтверждено, что Аффлек станет режиссёром картины. В августе 2016 года на одной из страниц Аффлека в социальных сетях был опубликован тестовый материал, в котором был показан персонаж Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.</p>
             </div>
             <div class="subscribe">
-              <!-- спам -->
+              <h4 class="subscribe-title">Подпишитесь на обновления</h4>
+
+              <form action="" class="subscribe-form">
+                <input type="input" class="subscribe-input" placeholder="Ваш Email">
+                <button type="submit" class="subscribe-button">
+                  <img src="./img/check.svg" alt="subscribe-icon">
+                </button>
+              </form>
+
               <a href="#" class="banner">
                 <img src="./img/banner.jpg" alt="banner">
               </a>
