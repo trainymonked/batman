@@ -6,6 +6,8 @@
   <title>Бэтмен 2021 - страница о фильме</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -30,13 +32,13 @@
     </header>
 
     <main class="main">
-      <h1 class="title">Бэтмен</h1>
-      <small class="title-en">The Batman</small>
-      <div class="info">
+      <h1 class="title animated fadeInRight">Бэтмен</h1>
+      <small class="title-en animated fadeInRight">The Batman</small>
+      <div class="info  animated fadeInUp delay-1s">
         <div class="movie-info">
           <span class="tag">Фильм</span>
           <span class="country">США, 2021</span>
-          <a href="#" class="play">Смотреть трейлер</a>
+          <a data-fancybox href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg" class="play">Смотреть трейлер</a>
         </div>
         <a href="#content-link" class="more">Подробнее</a>
       </div>
@@ -62,26 +64,44 @@
         </div>
         <div class="full-info">
           <nav class="tabs">
-            <a href="#" class="tabs-item tabs-item-active">Описание</a>
-            <a href="#" class="tabs-item">Рецензии</a>
-            <a href="#" class="tabs-item">Премьеры</a>
-            <a href="#" class="tabs-item">Актеры</a>
-            <a href="#" class="tabs-item">Награды</a>
-            <a href="#" class="tabs-item">Факты</a>
-            <a href="#" class="tabs-item">Сайты</a>
-            <a href="#" class="tabs-item">
+            <a href="#about" class="tabs-item tabs-item-active">Описание</a>
+            <a href="#reviews" class="tabs-item">Рецензии</a>
+            <a href="#premieres" class="tabs-item">Премьеры</a>
+            <a href="#actors" class="tabs-item">Актеры</a>
+            <a href="#awards" class="tabs-item">Награды</a>
+            <a href="#facts" class="tabs-item">Факты</a>
+            <a href="#sites" class="tabs-item">Сайты</a>
+            <a href="#" class="tabs-item tabs-item-bookmark">
               <!-- TODO: change to font awesome and paint bookmark icon <i class="fas fa-bookmark"></i> -->
               <img src="./img/bookmark-orange.svg" alt="bookmark-added">
             </a>
           </nav>
           <div class="full-content">
-            <div class="tabs-content">
+            <div class="tabs-content tabs-content-visible" id="about">
               <p class="text">Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.</p>
               <p class="text">Фильм является десятым по счёту фильмом из Расширенной вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт Ривз, а главную роль исполнит Роберт Паттинсон</p>
               <h4 class="text-title">Разработка</h4>
               <p class="text">В октябре 2014 года студия Warner Bros. объявила, что в разработке находится сольный фильм о Бэтмене, роль которого вновь исполнит Бен Аффлек. В июле 2015 года сообщалось, что Аффлек ведёт переговоры со студией по поводу постановки фильма и совместного написания сценария с Джеффом Джонсом.</p>
               <p class="text">После выхода фильма «Бэтмен против Супермена: На заре справедливости» руководитель агентства WME Патрик Уайтсел подтвердил, что Аффлек написал сценарий для сольного фильма о Бэтмене и в настоящий момент его рассматривают студия и DC. В мае 2016 года Джереми Айронс подтвердил, что он появится в фильме про Тёмного Рыцаря.</p>
               <p class="text">На Comic-Con в Сан-Диего в июле 2016 года было официально подтверждено, что Аффлек станет режиссёром картины. В августе 2016 года на одной из страниц Аффлека в социальных сетях был опубликован тестовый материал, в котором был показан персонаж Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.</p>
+            </div>
+            <div class="tabs-content" id="reviews">
+              <p class="text">Тут скоро появятся рецензии</p>
+            </div>
+            <div class="tabs-content" id="premieres">
+              <p class="text">Тут скоро появятся премьеры</p>
+            </div>
+            <div class="tabs-content" id="actors">
+              <p class="text">Тут скоро появятся актеры</p>
+            </div>
+            <div class="tabs-content" id="awards">
+              <p class="text">Тут скоро появятся награды</p>
+            </div>
+            <div class="tabs-content" id="facts">
+              <p class="text">Тут скоро появятся факты</p>
+            </div>
+            <div class="tabs-content" id="sites">
+              <p class="text">Тут скоро появятся сайты</p>
             </div>
             <div class="subscribe">
               <h4 class="subscribe-title">Подпишитесь на обновления</h4>
@@ -102,5 +122,9 @@
       </div>
     </main>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="./js/jquery.fancybox.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

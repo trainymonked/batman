@@ -24,9 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* внутренний отступ */
   padding-top: 45px;
-  /* внешний */
   margin-bottom: 30%;
 }
 
@@ -54,7 +52,6 @@ body {
   flex: 1;
   background: rgba(196, 196, 196, 0.5);
   border-radius: 5px;
-  /* внутренние отступы */
   padding: 12px 18px;
   border: none;
   color: #FFFFFF;
@@ -254,14 +251,13 @@ body {
 }
 
 .full-info {
-  /* для чего flex тут? */
-  /* flex: 0.97; */
+  /* flex - чтобы вправо все не уплыло, когда контент меньше становится */
+  flex: 0.97;
   margin-left: 4%;
 }
 
 .tabs {
   display: flex;
-  /* justify-content: space-between; */
   margin-bottom: 4%;
 }
 
@@ -287,6 +283,11 @@ body {
 
 .tabs-content {
   margin-right: 40px;
+  display: none;
+}
+
+.tabs-content-visible {
+  display: block;
 }
 
 .text {
