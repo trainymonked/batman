@@ -14,7 +14,7 @@
   <div class="container">
     <header class="header">
       <div class="logo">
-        <a href="#" class="logo-link">КиноПульс</a>
+        <a href="./index.html" class="logo-link">КиноПульс</a>
       </div>
       <form action="" class="search">
         <input type="input" class="search-input" placeholder="Фильмы, сериалы, актеры">
@@ -24,30 +24,32 @@
       </form>
       <div class="user">
         <button class="bookmark-button">
-          <!-- TODO: change to font awesome <i class="far fa-bookmark"></i> -->
+          <!-- можно заменить на иконочный шрифт, но лень "far fa-bookmark" -->
           <img src="./img/bookmark.svg" alt="bookmark-icon">
         </button>
-        <button class="avatar"></button>
+        <a href="./img/avatar.jpg" data-fancybox data-width="500">
+          <img src="./img/avatar.jpg" alt="avatar" class="avatar">
+        </a>
       </div>
     </header>
 
     <main class="main">
-      <h1 class="title animated fadeInRight">Бэтмен</h1>
-      <small class="title-en animated fadeInRight">The Batman</small>
-      <div class="info  animated fadeInUp delay-1s">
+      <h1 class="title">Бэтмен</h1>
+      <small class="title-en">The Batman</small>
+      <div class="info animated fadeInUp delay-1s">
         <div class="movie-info">
           <span class="tag">Фильм</span>
           <span class="country">США, 2021</span>
           <a data-fancybox href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg" class="play">Смотреть трейлер</a>
         </div>
-        <a href="#content-link" class="more">Подробнее</a>
+        <a href="#content-link" id="more" class="more">Подробнее</a>
       </div>
 
       <div class="content">
         <div id="content-link"></div>
         <div class="short-info">
           <img src="./img/poster.jpg" alt="poster" class="poster">
-          <button class="button-willwatch">Буду смотреть</button>
+          <button class="button-willwatch" id="button-willwatch">Буду смотреть</button>
           <h1 class="actors-title">В главных ролях:</h1>
           <ul class="actors-list">
             <li class="actors-list-item"><a href="#" class="actors-list-item-link">Роберт Паттинсон</a></li>
@@ -71,10 +73,14 @@
             <a href="#awards" class="tabs-item">Награды</a>
             <a href="#facts" class="tabs-item">Факты</a>
             <a href="#sites" class="tabs-item">Сайты</a>
-            <a href="#" class="tabs-item tabs-item-bookmark">
-              <!-- TODO: change to font awesome and paint bookmark icon <i class="fas fa-bookmark"></i> -->
+            <a href="#" class="tabs-item tabs-item-bookmark" data-fancybox data-src="#modal">
+              <!-- можно заменить на иконочный шрифт "fas fa-bookmark"-->
               <img src="./img/bookmark-orange.svg" alt="bookmark-added">
             </a>
+            <div class="modal" id="modal">
+              <h2>Ошибка!</h2>
+              <p>Уже добавлено в закладки</p>
+            </div>
           </nav>
           <div class="full-content">
             <div class="tabs-content tabs-content-visible" id="about">
@@ -93,6 +99,19 @@
             </div>
             <div class="tabs-content" id="actors">
               <p class="text">Тут скоро появятся актеры</p>
+              <h4>В главных ролях:</h1>
+              <ul class="actors-list">
+                <li class="actors-list-item">Роберт Паттинсон</li>
+                <li class="actors-list-item">Зои Кравиц</li>
+                <li class="actors-list-item">Колин Фаррелл</li>
+                <li class="actors-list-item">Питер Сарсгаард</li>
+                <li class="actors-list-item">Пол Дано</li>
+                <li class="actors-list-item">Энди Серкис</li>
+                <li class="actors-list-item">Джеффри Райт</li>
+                <li class="actors-list-item">Джон Туртурро</li>
+                <li class="actors-list-item">Макс Карвер</li>
+                <li class="actors-list-item">Кон О’Нилл</li>
+              </ul>
             </div>
             <div class="tabs-content" id="awards">
               <p class="text">Тут скоро появятся награды</p>
@@ -105,15 +124,14 @@
             </div>
             <div class="subscribe">
               <h4 class="subscribe-title">Подпишитесь на обновления</h4>
-
-              <form action="" class="subscribe-form">
+              <form action="#" class="subscribe-form">
                 <input type="input" class="subscribe-input" placeholder="Ваш Email">
                 <button type="submit" class="subscribe-button">
                   <img src="./img/check.svg" alt="subscribe-icon">
                 </button>
               </form>
 
-              <a href="#" class="banner">
+              <a href="https://xanny.me" class="banner" target="_blank" rel="noopener noreferrer">
                 <img src="./img/banner.jpg" alt="banner">
               </a>
             </div>

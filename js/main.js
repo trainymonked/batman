@@ -2,7 +2,7 @@ $(document).ready(function () {
   var tabsItem = $('.tabs-item:not(.tabs-item-bookmark)');
   tabsItem.on('click', function (event) {
     event.preventDefault();
-    
+
     var activeContent = $(this).attr('href');
     $('.tabs-content-visible').toggleClass('tabs-content-visible');
     $(activeContent).toggleClass('tabs-content-visible');
@@ -11,10 +11,19 @@ $(document).ready(function () {
     $(this).toggleClass('tabs-item-active');
   });
 
-  var bookmarkAdded = $('.tabs-item-bookmark');
-  bookmarkAdded.on('click', function (event) {
+  var showMore = $('#more');
+  showMore.on('click', function (event) { 
     event.preventDefault();
-    // заменить на всплывашку по центру
-    alert('Уже добавлено в закладки!');
+    $('html').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 800, function () {
+      // и зачем я сделал этот велосипед...
+      window.location.hash = showMore[0].hash;
+    });
+  });
+
+  var willWatch = $('#button-willwatch');
+  willWatch.on('click', function () {
+    this.innerText = 'Добавлено!';
   });
 });
