@@ -423,7 +423,7 @@ body {
   .short-info {
     width: 100%;
   }
-  .actors-list, .actors-title {
+  .actors-list:not(.actors-list-visible), .actors-title {
     display: none;
   }
   .tabs {
