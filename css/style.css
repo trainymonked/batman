@@ -208,7 +208,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #FFFFFF;
-  border-radius: 3px;
+  border-radius: 3px 3px 0px 0px;
   color: #000000;
   padding: 3% 4%;
 }
@@ -345,6 +345,28 @@ body {
 
 /* END CONTENT */
 
+.cr {
+  background-color: #ffffff;
+  margin: -3% 0 0;
+  border-radius: 0 0 3px 3px;
+}
+
+.cr-text {
+  padding: 8px;
+  color: #000000;
+}
+
+.cr-link {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cr-link:hover {
+  text-decoration: underline;
+  font-style: italic;
+}
+
 
 /* MEDIA */
 
@@ -377,7 +399,7 @@ body {
   .tabs-content {
     margin-bottom: 5%;
   }
-} 
+}
 
 @media (max-width: 768px) {
   body {

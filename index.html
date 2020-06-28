@@ -6,29 +6,29 @@
   <title>Бэтмен 2021 - страница о фильме</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="./css/animate.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container">
     <header class="header">
       <div class="logo">
-        <a href="./index.html" class="logo-link">КиноПульс</a>
+        <a href="index.html" class="logo-link">КиноПульс</a>
       </div>
       <form action="#" class="search">
         <input type="text" class="search-input" placeholder="Фильмы, сериалы, актеры">
         <button type="submit" class="search-button">
-          <img src="./img/search-icon.svg" alt="search-icon">
+          <img src="img/search-icon.svg" alt="search-icon">
         </button>
       </form>
       <div class="user">
         <button class="bookmark-button">
           <!-- можно заменить на иконочный шрифт, но лень "far fa-bookmark" -->
-          <img src="./img/bookmark.svg" alt="bookmark-icon">
+          <img src="img/bookmark.svg" alt="bookmark-icon">
         </button>
-        <a href="./img/avatar.jpg" data-fancybox data-width="500">
-          <img src="./img/avatar.jpg" alt="avatar" class="avatar">
+        <a href="img/avatar.jpg" data-fancybox data-width="500">
+          <img src="img/avatar.jpg" alt="avatar" class="avatar">
         </a>
       </div>
     </header>
@@ -48,7 +48,7 @@
       <div class="content">
         <div id="content-link"></div>
         <div class="short-info">
-          <img src="./img/poster.jpg" alt="poster" class="poster">
+          <img src="img/poster.jpg" alt="poster" class="poster">
           <button class="button-willwatch" id="button-willwatch">Буду смотреть</button>
           <h1 class="actors-title">В главных ролях:</h1>
           <ul class="actors-list">
@@ -75,7 +75,7 @@
             <a href="#sites" class="tabs-item">Сайты</a>
             <a href="#" class="tabs-item tabs-item-bookmark" data-fancybox data-src="#modal">
               <!-- можно заменить на иконочный шрифт "fas fa-bookmark"-->
-              <img src="./img/bookmark-orange.svg" alt="bookmark-added">
+              <img src="img/bookmark-orange.svg" alt="bookmark-added">
             </a>
             <div class="modal" id="modal">
               <h2>Ошибка!</h2>
@@ -127,18 +127,22 @@
               <form action="#" class="subscribe-form">
                 <input type="text" class="subscribe-input" placeholder="Ваш Email">
                 <button type="submit" class="subscribe-button">
-                  <img src="./img/check.svg" alt="subscribe-icon">
+                  <img src="img/check.svg" alt="subscribe-icon">
                 </button>
               </form>
 
-              <a href="https://xanny.me" class="banner" target="_blank" rel="noopener noreferrer">
-                <img src="./img/banner.jpg" alt="banner">
+              <a href="https://terill.github.io" class="banner" target="_blank" rel="noopener noreferrer">
+                <img src="img/banner.jpg" alt="banner">
               </a>
             </div>
           </div>
         </div>
       </div>
     </main>
+
+    <div class="cr">
+      <p class="cr-text">© 2020, СДЕЛАНО С <img src="img/love.png" alt="ЛЮБОВЬЮ"> ДЛЯ ПОРТФОЛИО <a class="cr-link" target="_blank" href="../portfolio/index.html">terill.github.io/portfolio</a></p>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
